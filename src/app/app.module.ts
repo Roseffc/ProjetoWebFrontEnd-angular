@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { TotalCardComponent } from './components/total-card/total-card.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TotalCardComponent
+    TotalCardComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
