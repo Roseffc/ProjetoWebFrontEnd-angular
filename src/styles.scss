@@ -2,3 +2,141 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+ .container {
+  padding: 0 65px;
+  margin: 0 auto;
+}
+
+ .d-flex {
+  display: flex;
+}
+
+ .flex-wrap {
+  flex-wrap: wrap;
+}
+
+ .justify-content {
+
+  &-start {
+    justify-content: start;
+  }
+
+  &-end {
+    justify-content: end;
+  }
+
+  &-center {
+    justify-content: center;
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+ .mt {
+
+  &-5 {
+    margin-top: 5px;
+  }
+
+  &-10 {
+    margin-top: 10px;
+  }
+
+  &-15 {
+    margin-top: 15px;
+  }
+
+  &-50 {
+    margin-top: 50px;
+  }
+}
+
+ .text-aling {
+
+  &-start {
+    text-align: start;
+  }
+
+  &-end {
+    text-align: end;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}
+
+ .fs {
+
+  &-12 {
+    font-size: 12px;
+  }
+
+  &-14 {
+    font-size: 14px;
+  }
+
+  &-16 {
+    font-size: 16px;
+  }
+
+  &-20 {
+    font-size: 20px;
+  }
+}
+
+ .fw-bold {
+  font-weight: bold;
+}
+
+ .m {
+
+  &-10 {
+    margin: 10px;
+  }
+
+  &-15 {
+    margin: 15px;
+  }
+
+  &-20 {
+    margin: 20px;
+  }
+}
+
+ .mr {
+
+  &-10 {
+    margin-right: 10px;
+  }
+
+  &-15 {
+    margin-right: 15px;
+  }
+
+  &-20 {
+    margin-right: 20px;
+  }
+}
+
+ .mb {
+
+  &-10 {
+    margin-bottom: 10px;
+  }
+
+  &-15 {
+    margin-bottom: 15px;
+  }
+
+  &-20 {
+    margin-bottom: 20px;
+  }
+}

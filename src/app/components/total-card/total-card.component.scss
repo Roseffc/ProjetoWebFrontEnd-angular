@@ -1,0 +1,15 @@
+.card {
+  flex-wrap: wrap;
+
+  &__body{
+    max-width: 150px;
+    cursor: pointer;
+
+    @media ( max-width: 500px ) {
+      margin: 10px;
+    }
+  }
+}
+
+
+
