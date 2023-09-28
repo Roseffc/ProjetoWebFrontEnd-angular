@@ -1,0 +1,37 @@
+<!-- <mat-form-field appearance="standard">
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+</mat-form-field> -->
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="date">
+      <th class="fs-16 fw-bold" mat-header-cell *matHeaderCellDef mat-sort-header>Data</th>
+      <td mat-cell *matCellDef="let row"> {{row.date | date: 'dd/MM/yy, h:mm a'}} </td>
+    </ng-container>
+    <ng-container matColumnDef="cnpjRoot">
+      <th class="fs-16 fw-bold" mat-header-cell *matHeaderCellDef mat-sort-header>CNPJ</th>
+      <td mat-cell *matCellDef="let row"> {{row.cnpjRoot}} </td>
+    </ng-container>
+    <ng-container matColumnDef="cardBrand">
+      <th class="fs-16 fw-bold" mat-header-cell *matHeaderCellDef mat-sort-header>Bandeira</th>
+      <td mat-cell *matCellDef="let row"> {{row.cardBrand}} </td>
+    </ng-container>
+    <ng-container matColumnDef="netAmount">
+      <th class="fs-16 fw-bold" mat-header-cell *matHeaderCellDef mat-sort-header>Valor</th>
+      <td mat-cell *matCellDef="let row"> {{row.netAmount}} </td>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <th class="fs-16 fw-bold" mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+      <td mat-cell *matCellDef="let row"> {{row.status}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No data matching the filter</td>
+      <!-- "{{input.value}}" -->
+    </tr>
+  </table>
+  <mat-paginator [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" aria-label="Select page of users"
+    (page)="handlePaginator($event)">
+  </mat-paginator>
+</div>
