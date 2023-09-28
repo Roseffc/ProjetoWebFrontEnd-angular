@@ -1,7 +1,16 @@
 <div class="container mt-20">
+  <p class="fs-14 fw-bold">Período de 01/04/2021 até 30/07/2021</p>
   <section class="cardSummary d-flex">
-    <app-total-card [title]="'Quantidade total'" [value]="'15,00'"></app-total-card>
-    <app-total-card [title]="'Total de transaçoes'" [value]="'15,00'"></app-total-card>
-    <app-total-card [title]="'Media valores'" [value]="'15,00'"></app-total-card>
+    <app-total-card [title]="'Quantidade total'" [value]="summary.totalQuantity"></app-total-card>
+    <app-total-card [title]="'Valor médio total'"
+      [value]="formatarComoMoeda(summary.totalAverageAmount)"></app-total-card>
+    <app-total-card [title]="'Valor líquido total'"
+      [value]="formatarComoMoeda(summary.totalNetAmount)"></app-total-card>
+  </section>
+  <section class="graphSummary">
+  </section>
+  <section class="transaction-list">
+    <h2 class="pt-15">Lista de transações</h2>
+    <app-transaction-list></app-transaction-list>
   </section>
 </div>

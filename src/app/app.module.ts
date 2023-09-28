@@ -13,12 +13,21 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatListModule} from '@angular/material/list';
+import { TransactionListComponent } from './components/transaction-list/transaction-list.component';
+import { TransactionService } from './services/transaction.service';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { CommonModule, CurrencyPipe } from '@angular/common';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TotalCardComponent,
-    DashboardComponent
+    DashboardComponent,
+    TransactionListComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +39,15 @@ import {MatListModule} from '@angular/material/list';
     MatSidenavModule,
     MatSelectModule,
     MatButtonToggleModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    CommonModule
+
   ],
-  providers: [],
+  providers: [TransactionService, CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

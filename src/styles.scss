@@ -1,23 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./styles/material-theme.scss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
 
- .container {
-  padding: 0 65px;
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  padding-bottom: 0 65px;
   margin: 0 auto;
 }
 
- .d-flex {
+.d-flex {
   display: flex;
 }
 
- .flex-wrap {
+.flex-wrap {
   flex-wrap: wrap;
 }
 
- .justify-content {
+.justify-content {
 
   &-start {
     justify-content: start;
@@ -40,7 +47,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
- .mt {
+.mt {
 
   &-5 {
     margin-top: 5px;
@@ -59,7 +66,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
- .text-aling {
+.text-aling {
 
   &-start {
     text-align: start;
@@ -74,7 +81,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
- .fs {
+.fs {
 
   &-12 {
     font-size: 12px;
@@ -93,11 +100,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
- .fw-bold {
+.fw-bold {
   font-weight: bold;
 }
 
- .m {
+.m {
 
   &-10 {
     margin: 10px;
@@ -112,7 +119,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
- .mr {
+.mr {
 
   &-10 {
     margin-right: 10px;
@@ -127,7 +134,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
- .mb {
+.mb {
 
   &-10 {
     margin-bottom: 10px;
@@ -138,11 +145,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 
   &-20 {
-    margin-bottom: 20px!important;
+    margin-bottom: 20px !important;
   }
 }
 
- .mt {
+.mt {
 
   &-10 {
     margin-top: 10px;
@@ -154,5 +161,80 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   &-20 {
     margin-top: 20px;
+  }
+}
+
+.p {
+
+  &-10 {
+    padding: 10px;
+  }
+
+  &-15 {
+    padding: 15px;
+  }
+
+  &-20 {
+    padding: 20px;
+  }
+}
+
+.pt {
+
+  &-10 {
+    padding-top: 10px;
+  }
+
+  &-15 {
+    padding-top: 15px;
+  }
+
+  &-20 {
+    padding-top: 20px;
+  }
+}
+
+.pb {
+
+  &-10 {
+    padding-bottom: 10px;
+  }
+
+  &-15 {
+    padding-bottom: 15px;
+  }
+
+  &-20 {
+    padding-bottom: 20px;
+  }
+}
+
+.pr {
+
+  &-10 {
+    padding-right: 10px;
+  }
+
+  &-15 {
+    padding-right: 15px;
+  }
+
+  &-20 {
+    padding-right: 20px;
+  }
+}
+
+.pl {
+
+  &-10 {
+    padding-left: 10px;
+  }
+
+  &-15 {
+    padding-left: 15px;
+  }
+
+  &-20 {
+    padding-left: 20px;
   }
 }
