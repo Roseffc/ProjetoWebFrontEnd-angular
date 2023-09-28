@@ -1,0 +1,13 @@
+.cardSummary {
+  gap: 15px;
+}
+
+::ng-deep  .mat-drawer {
+  background-color: var(--light);
+  padding: 15px;
+}
+::ng-deep .dark-theme .mat-drawer {
+  background-color: var(--dark);
+  padding: 15px;
+  border: solid 1px #dedede;
+}
