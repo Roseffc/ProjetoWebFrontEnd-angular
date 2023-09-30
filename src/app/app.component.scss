@@ -1,13 +1,33 @@
-.container {
+.drawer-container {
   height: 100vh;
-  width: 100%;
-  display: flex;
   background-color: var(--light);
-}
+  }
 
 mat-drawer-content {
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding: 20px;
+  // width: 80%;
 }
+
+mat-drawer {
+  min-width: 300px;
+}
+
+.formPeriod {
+  width: 250px;
+}
+
+::ng-deep .mat-form-field-infix {
+  display: flex!important;
+}
+
+.button {
+  background-color: #017ceb;
+  color: var(--light);
+}
+
+.sidebarHeader {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
