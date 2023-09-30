@@ -20,7 +20,6 @@ export class PieChartComponent implements OnInit, OnChanges {
   @Input() series: any = [];
 
 
-
   constructor() {
     this.chartOptions = {
       series: [],
