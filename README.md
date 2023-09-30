@@ -24,7 +24,7 @@ Abrir o browser com esse link http://localhost:4200/home
 ### Interfaces
 
 
-| Listagem de regiões |
+| Dashboard |
 |:-------------:|
 |<img width="400" alt="Nome imagem" src="src/assets/img/dashborad.png">
 
