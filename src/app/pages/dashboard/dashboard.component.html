@@ -1,13 +1,13 @@
-<div class="container mt-20">
-  <p class="fs-14 fw-bold">Período de 01/04/2021 até 30/07/2021</p>
+<div class="mt-20">
+  <p class="fs-14 fw-bold mb-15">Período de<span>{{ startDate | date: 'dd/MM/yy'  }}</span> até  <span>{{ endDate | date: 'dd/MM/yy' }}</span></p>
   <section class="cardSummary d-flex">
-    <app-total-card [title]="'Quantidade total'" [value]="summary.totalQuantity"></app-total-card>
-    <app-total-card [title]="'Valor médio total'"
-      [value]="formatarComoMoeda(summary.totalAverageAmount)"></app-total-card>
-    <app-total-card [title]="'Valor líquido total'"
-      [value]="formatarComoMoeda(summary.totalNetAmount)"></app-total-card>
+    <app-total-card [title]="'Transações'" [value]="summary.totalQuantity"></app-total-card>
+    <app-total-card [title]="'Valor Bruto'" [value]="formatarComoMoeda(summary.totalAmount)"></app-total-card>
+    <app-total-card [title]="'Valor líquido'" [value]="formatarComoMoeda(summary.netAmount)"></app-total-card>
   </section>
-  <section class="graphSummary">
+  <section class="d-flex boxGraph">
+    <app-pie-chart [labels]="pieChartsValue.labels" [series]="pieChartsValue.series"></app-pie-chart>
+    <!-- <app-column-chart [labels]="pieChartsValue.labels" [series]="pieChartsValue.series"></app-column-chart> -->
   </section>
   <section class="transaction-list">
     <h2 class="pt-15">Lista de transações</h2>
