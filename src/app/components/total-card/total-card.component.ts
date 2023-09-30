@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SharedStateService } from 'src/app/services/shared-state.service';
 
 @Component({
   selector: 'app-total-card',
@@ -7,11 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TotalCardComponent implements OnInit {
   @Input() title = '';
-  @Input() value = '';
+  @Input() value:any;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 
